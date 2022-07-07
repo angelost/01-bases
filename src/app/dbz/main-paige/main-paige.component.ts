@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
 })
 export class MainPaigeComponent {
 
-  constructor() { } 
+  agregar() {
+    console.log('Esta es una prueba');
+  }
 
 }

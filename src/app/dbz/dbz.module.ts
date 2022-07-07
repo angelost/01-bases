@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 import { MainPaigeComponent } from './main-paige/main-paige.component';
+
 
 
 
@@ -12,7 +15,9 @@ import { MainPaigeComponent } from './main-paige/main-paige.component';
     MainPaigeComponent
 ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
+
 export class DbzModule { }
