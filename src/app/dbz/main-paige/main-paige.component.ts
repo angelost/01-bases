@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interface';
+import { DbzService } from '../services/dbz.services';
 
 @Component({
   selector: 'app-main-paige',
@@ -25,6 +26,10 @@ export class MainPaigeComponent {
 
   agregarNuevoPersonaje( argumento: Personaje ) {
     this.personajes.push( argumento );
+  }
+
+  constructor( private DbzService: DbzService ) {
+
   }
 
 }

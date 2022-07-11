@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { MainPaigeComponent } from './main-paige/main-paige.component';
 import { PersonajesComponent } from './personajes/personajes.component';
 import { AgregarComponent } from './agregar/agregar.component';
+import { DbzService } from './services/dbz.services';
 
 
 
@@ -21,6 +22,9 @@ import { AgregarComponent } from './agregar/agregar.component';
   imports: [
     CommonModule,
     FormsModule
+  ],
+  providers: [
+    DbzService
   ]
 })
 
