@@ -8,28 +8,14 @@ import { DbzService } from '../services/dbz.services';
 })
 export class MainPaigeComponent {
 
-  personajes: Personaje[] = [
-    {
-      nombre: 'Goku',
-      poder: 15000
-    },
-    {
-      nombre: 'Vegeta',
-      poder: 7500
-    }
-  ]
+  personajes: Personaje[] = [];
 
   nuevo: Personaje = {
     nombre: 'Maestro Roshi',
     poder: 1000
   }
 
-  agregarNuevoPersonaje( argumento: Personaje ) {
-    this.personajes.push( argumento );
-  }
-
   constructor( private DbzService: DbzService ) {
-
+    this.personajes = this.DbzService.personajes;
   }
-
 }
